@@ -103,3 +103,16 @@ format: "Blu-ray"
 movies["Тачки"] = cars;
 
 console.log(Object.keys(movies));
+
+// my friends dz
+// let myFriend = {
+//     "masha": {
+//         scores: 0
+//     },
+//     "pasha": {
+//         scores: 0
+//     }
+// };
+
+// console.log(myFriend.scores);
+
