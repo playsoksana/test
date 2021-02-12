@@ -105,14 +105,27 @@ movies["Тачки"] = cars;
 console.log(Object.keys(movies));
 
 // my friends dz
-// let myFriend = {
-//     "masha": {
-//         scores: 0
-//     },
-//     "pasha": {
-//         scores: 0
-//     }
-// };
+let myFriend = {
+    "masha": {
+        scores: 0
+    },
+    "pasha": {
+        scores: 0
+    }
+};
 
-// console.log(myFriend.scores);
+
+myFriend.masha += 3;
+myFriend.pasha += 5;
+
+console.log(myFriend);
+
+var myCrazyObject = {
+"name": "Нелепый объект",
+"some array": [7, 9, { purpose: "путаница", number: 123 }, 3.3],
+"random animal": "Банановая акула"
+};
+
+console.log(myCrazyObject["some array"][2]["number"]);
+
 
