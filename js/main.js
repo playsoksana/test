@@ -1323,6 +1323,7 @@
   // console.log(builder.getValue()); // '=^.^='
 
   //!CLASS  CLASS  CLASS  CLASS 
+//<<<<<<< HEAD
   /*
 
   class People {                                                              // !ƒ () { [native code] }
@@ -1331,6 +1332,15 @@
   #region; 
   static EAT = true;                                                       // ! static cвойство автоматом попадает в конструктор и не попадает в прототайп 
 static bigEge(user1, user2) {                                              // ! єто как свойство самого класса конструктора. имяфункции.имя свойства = значение(олд метод), доступен классу и дочерним классам
+=======
+
+class People {                                                              // !ƒ () { [native code] }
+  name;
+  age; 
+  #region; 
+  static EAT = true;                                                       // ! static cвойство автоматом попадает в конструктор 
+static bigEge(user1, user2) {                                              // ! доступен классу и дочерним классам
+>>>>>>> 5923e6a5cb44886d5a03696c6a88a809ee0bc6f4
   if (user1.age < user2.age2) {
     return user1.name;
   }
@@ -1341,7 +1351,11 @@ static bigEge(user1, user2) {                                              // ! 
     this.age = age;
     this.name = name;
     this.#region = region;
+<<<<<<< //! HEAD
     console.log(this);                                                       // ! Piople {name: "Oksana", ege: 36, #region: "Kherson"}
+=======
+    console.log(this);                                                       // ! Piople {name: "Oksana", ege: 36, #region: "Kherson"}
+>>>>>>> 5923e6a5cb44886d5a03696c6a88a809ee0bc6f4
      }
      get userName () {
       return this.name;
@@ -1378,6 +1392,7 @@ static bigEge(user1, user2) {                                              // ! 
 
    const bor = new Boss ({name: 'Boris', age: 45, region: "Kherson", level: '1'});
    console.log(bor);
+<<<<<<< HEAD
 */
 
 
@@ -1465,3 +1480,5 @@ console.log(Hero.strongest(angelus, dragon));
 
 
    
+=======
+>>>>>>> 5923e6a5cb44886d5a03696c6a88a809ee0bc6f4
