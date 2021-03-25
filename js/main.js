@@ -1,16 +1,3 @@
-// function disemvowel(str) {
-//   let newStr = '';
-//   for (let i = 0; i < str.length; i += 1) {
-//       const str1 = str.toLowerCase();
-//       if ('a,e,i,o,u'.includes(str1[i])) {
-//           continue;
-//       }
-//       newStr += str[i];
-//   }
-//   return newStr;
-// }
-// console.log(disemvowel('This website is for losers LOL'));
-
 // const toJadenCase = function(str) {
 // // Разбиваю на массив
 // str = str.split(" ");
@@ -1323,162 +1310,167 @@
   // console.log(builder.getValue()); // '=^.^='
 
   //!CLASS  CLASS  CLASS  CLASS 
-//<<<<<<< HEAD
-  /*
 
-  class People {                                                              // !ƒ () { [native code] }
-  name;
-  age; 
-  #region; 
-  static EAT = true;                                                       // ! static cвойство автоматом попадает в конструктор и не попадает в прототайп 
-static bigEge(user1, user2) {                                              // ! єто как свойство самого класса конструктора. имяфункции.имя свойства = значение(олд метод), доступен классу и дочерним классам
-=======
+ // class People {                                                              // !ƒ () { [native code] }
+  //name;
+  //age; 
+  //#region; 
+ // static EAT = true;                                                       // ! static cвойство автоматом попадает в конструктор 
+//static bigEge(user1, user2) {                                              // ! доступен классу и дочерним классам
+ // if (user1.age < user2.age2) {
+ //   return user1.name;
+ // }
+  //return user2.name;
+//}
 
-class People {                                                              // !ƒ () { [native code] }
-  name;
-  age; 
-  #region; 
-  static EAT = true;                                                       // ! static cвойство автоматом попадает в конструктор 
-static bigEge(user1, user2) {                                              // ! доступен классу и дочерним классам
->>>>>>> 5923e6a5cb44886d5a03696c6a88a809ee0bc6f4
-  if (user1.age < user2.age2) {
-    return user1.name;
-  }
-  return user2.name;
-}
-
-  constructor ({name, age, region} = {}) {                                   // !ƒ () { [native code] }
-    this.age = age;
-    this.name = name;
-    this.#region = region;
-<<<<<<< //! HEAD
-    console.log(this);                                                       // ! Piople {name: "Oksana", ege: 36, #region: "Kherson"}
-=======
-    console.log(this);                                                       // ! Piople {name: "Oksana", ege: 36, #region: "Kherson"}
->>>>>>> 5923e6a5cb44886d5a03696c6a88a809ee0bc6f4
-     }
-     get userName () {
-      return this.name;
-    }
-    set userName (newName) {
-      this.name = newName;
-    }
+ // constructor ({name, age, region} = {}) {                                   // !ƒ () { [native code] }
+ //   this.age = age;
+  //  this.name = name;
+ //   this.#region = region;
+ //   console.log(this);                                                       // ! Piople {name: "Oksana", ege: 36, #region: "Kherson"}
+//      }
+//      get userName () {
+//       return this.name;
+//     }
+//     set userName (newName) {
+//       this.name = newName;
+//     }
     
-}
+// }
 
-  const oksana = new People ({name:'Oksana', age: 36, region: 'Kherson'});   //!    {constructor: ƒ}
-  const kolya = new People ({name:'Kolya', age: 9, region: 'Kherson'});   //!    {constructor: ƒ}
+  //const oksana = new People ({name:'Oksana', age: 36, region: 'Kherson'});   //!    {constructor: ƒ}
+ // const kolya = new People ({name:'Kolya', age: 9, region: 'Kherson'});   //!    {constructor: ƒ}
   
   
-  console.log(People.EAT);                                                  // ! true
+ // console.log(People.EAT);                                                  // ! true
  // console.log(oksana.EAT);                                                  // ! undefined
- console.log(People.bigEge(oksana, kolya));                                 // ! Вернет того кто старше 
-  console.log(Object.getPrototypeOf(People));
-  console.log(Object.getPrototypeOf(oksana) === People.prototype);          // ! true
-  console.log(Object.getPrototypeOf(People));
-  console.log(oksana.userName);                                             //! операция чтения ГЕТТЕР
-  oksana.userName = "Super Oksana"                                         // ! операция записи СЕТТЕР (изменение значения)
+ //console.log(People.bigEge(oksana, kolya));                                 // ! Вернет того кто старше 
+ // console.log(Object.getPrototypeOf(People));
+ // console.log(Object.getPrototypeOf(oksana) === People.prototype);          // ! true
+ // console.log(Object.getPrototypeOf(People));
+ // console.log(oksana.userName);                                             //! операция чтения ГЕТТЕР
+  //oksana.userName = "Super Oksana"                                         // ! операция записи СЕТТЕР (изменение значения)
 
-  console.log(oksana);
+  // console.log(oksana);
 
-   class Boss extends People {
-     constructor({config, level}){
-      super(config);                 //  super(name);  //! surer вызывает конструктор объекта в прототип 
-                                     //  super(ege);       // ! до this 
-                                     //  super(region);
-       this.level = level;
-     }
-   }
+  //  class Boss extends People {
+  //    constructor({config, level}){
+  //     super(config);                 //  super(name);  //! surer вызывает конструктор объекта в прототип 
+  //                                    //  super(ege);       // ! до this 
+  //                                    //  super(region);
+  //      this.level = level;
+  //    }
+  //  }
 
-   const bor = new Boss ({name: 'Boris', age: 45, region: "Kherson", level: '1'});
-   console.log(bor);
-<<<<<<< HEAD
-*/
-
-
-class Hero {
-    static strongest (subject1, subject2) {
-if (subject1.attack > subject2.attack) {
-    return `У ${subject1.name} атака выше чем у ${subject2.attack}  на ${subject1.attack - subject2.attack} единиц`;
-}
-return `У ${subject2.name} атака выше чем у ${subject1.name} на ${subject2.attack - subject1.attack} единиц`
-    }
-constructor ({name, attack, defense, health, speed}={}) {  // !ƒ () { [native code] }
-this.name = name;
-this.attack = attack;
-this.defense = defense;
-this.health = health;
-this.speed = speed;
-}  
-
-get _attack() {
-    return this._attack;
-}
-set _attack(newAttack) {
-    this.attack = newAttack;
-}
-
-get _defense() {
-    return this._defense;
-}
-set _defense(newDefense) {
-    this.attack = newDefense;
-}
-
-get _health() {
-    return this._health;
-}
-set _health(newHealth) {
-    this.health = newHealth;
-}
-
-get _speed() {
-    return this._speed;
-}
-set _speed(newSpeed) {
-    this.speed = newSpeed;
-}
-impairment (sumImpairment) {
-    this.health -= sumImpairment;
-}
-
-
-}
-
-
-class Castle extends Hero {    // !ЗАМОК
-
-constructor (config, resurrect = true) {
-    super(config);
-    this.resurrect = resurrect ;                        // !свойство воскрешение 
-}
-
-}
-
-class Stronghold extends Hero {   // !ОПЛОТ
-   constructor (config, resurrect = true) {
-       super(config);
-       this.resurrect = resurrect ;                     // !свойство воскрешение 
-   }
-}
-
-const angelus = new Castle ({name:'Angelus', attack: 20, defense: 20, health: 200, speed: 12});
-const dragon = new Stronghold ({name:'Green Dragon', attack: 25, defense: 25, health: 180, speed: 13});
-console.log(angelus.impairment(50))
-
-console.log(angelus);
-console.log(dragon);
-console.log(Hero.strongest(angelus, dragon));
+  //  const bor = new Boss ({name: 'Boris', age: 45, region: "Kherson", level: '1'});
+  //  console.log(bor);
 
 
 
+// class Hero {
+//     static strongest (subject1, subject2) {
+// if (subject1.attack > subject2.attack) {
+//     return `У ${subject1.name} атака выше чем у ${subject2.attack}  на ${subject1.attack - subject2.attack} единиц`;
+// }
+// return `У ${subject2.name} атака выше чем у ${subject1.name} на ${subject2.attack - subject1.attack} единиц`
+//     }
+// constructor ({name, attack, defense, health, speed}={}) {  // !ƒ () { [native code] }
+// this.name = name;
+// this.attack = attack;
+// this.defense = defense;
+// this.health = health;
+// this.speed = speed;
+// }  
+
+// get _attack() {
+//     return this._attack;
+// }
+// set _attack(newAttack) {
+//     this.attack = newAttack;
+// }
+
+// get _defense() {
+//     return this._defense;
+// }
+// set _defense(newDefense) {
+//     this.attack = newDefense;
+// }
+
+// get _health() {
+//     return this._health;
+// }
+// set _health(newHealth) {
+//     this.health = newHealth;
+// }
+
+// get _speed() {
+//     return this._speed;
+// }
+// set _speed(newSpeed) {
+//     this.speed = newSpeed;
+// }
+// impairment (sumImpairment) {
+//     this.health -= sumImpairment;
+// }
+
+
+// }
+
+
+// class Castle extends Hero {    // !ЗАМОК
+
+// constructor (config, resurrect = true) {
+//     super(config);
+//     this.resurrect = resurrect ;                        // !свойство воскрешение 
+// }
+
+// }
+
+// class Stronghold extends Hero {   // !ОПЛОТ
+//    constructor (config, resurrect = true) {
+//        super(config);
+//        this.resurrect = resurrect ;                     // !свойство воскрешение 
+//    }
+// }
+
+// const angelus = new Castle ({name:'Angelus', attack: 20, defense: 20, health: 200, speed: 12});
+// const dragon = new Stronghold ({name:'Green Dragon', attack: 25, defense: 25, health: 180, speed: 13});
+// console.log(angelus.impairment(50))
+
+// console.log(angelus);
+// console.log(dragon);
+// console.log(Hero.strongest(angelus, dragon));
+
+// class Samurai {
+//   constructor (name) {
+//     this.name = name;
+//   }
+//   hello () {
+//     console.log(this.name)
+//   }
+// }
+
+// const ksu = new Samurai ('KSU');
+// console.log(ksu);
+// console.log(ksu.__proto__);
+// console.log(ksu.__proto__.__proto__);
+// console.log(ksu.__proto__.constructor.__proto__.constructor);
 
 
 
+//! 
 
 
+// const a = {};
+// console.log(a);
+// const b = {key: 'b'}
+// const c = {key: 'c'}
 
+// a[b] = 1;
+// a[c] = 2;
+// console.log(a[b])
 
-   
-=======
->>>>>>> 5923e6a5cb44886d5a03696c6a88a809ee0bc6f4
+// const a = {};
+// const b = {};
+//  a[b] = 52;
+// console.log(a[b]);
