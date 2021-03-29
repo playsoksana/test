@@ -923,3 +923,22 @@
 // console.log(getNamesSortedByFriendCount(arr));
 
 //TASK43
+ //Пиши код ниже этой строки
+const getSortedFriends = users => users
+  .map(item => item.friends)
+  .flat(1).filter((item, i, arr) => arr.indexOf(item)=== i)
+  .sort((item, nextItem) => item.localeCompare(nextItem));
+//Пиши код выше этой строки
+
+
+//TASK44
+
+// Пиши код ниже этой строки
+const getTotalBalanceByGender = (users, gender) => users
+.filter(item => item.gender === gender)
+.reduce((acc, item) => {
+  return acc += item.balance}, 0);
+// Пиши код выше этой строки
+
+
+
