@@ -940,12 +940,6 @@
 //   return acc += item.balance}, 0);
 // // Пиши код выше этой строки
 
-// complete the function
-function solution(string) {
-    return string.split("").includes('c');
-}
-
-console.log(solution("camelCasing"));
 
 
 

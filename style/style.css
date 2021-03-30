@@ -1,0 +1,9 @@
+.ishidden {
+    display: none;
+}
+
+b {
+color: black;
+display: block;
+margin-bottom: 50px;
+}
