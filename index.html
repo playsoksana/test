@@ -8,37 +8,43 @@
 
     <title>Silly story generator</title>
     <link rel="stylesheet" href="./style/style.css"> </link>
-
-    <style>
-      body {
-        font-family: helvetica, sans-serif;
-        width: 350px;
-      }
-
-      label {
-        font-weight: bold;
-      }
-
-      div {
-        padding-bottom: 20px;
-      }
-
-      input[type="text"] {
-        padding: 5px;
-        width: 150px;
-      }
-
-      p {
-        background: #ffc125;
-        color: #5e2612;
-        padding: 10px;
-        visibility: hidden;
-      }
-    </style>
   </head>
 
   <body>
+    <ul id="categories">
 
+      <li class="item">
+        <h2>Животные</h2>    
+        <ul>
+          <li>Кот</li>
+          <li>Хомяк</li>
+          <li>Лошадь</li>
+          <li>Попугай</li>
+        </ul>
+      </li>
+
+      <li class="item">
+        <h2>Продукты</h2>
+    
+        <ul>
+          <li>Хлеб</li>
+          <li>Петрушка</li>
+          <li>Творог</li>
+        </ul>
+      </li>
+      
+      <li class="item">
+        <h2>Технологии</h2>
+    
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Node</li>
+        </ul>
+      </li>
+    </ul>
     <!-- <h1 id="x">hello word</h1>
     <script src="https://code.jquery.com/jquery-2.1.0.js"></script> -->
     <!-- <script src="./js/let.js"></script> -->
@@ -51,7 +57,7 @@
       $("#x").text(newText);
       $("body").append("<p>Это новый параграф</p>");
     </script> -->    
-    <article class="article">
+    <!-- <article class="article">
       <h2 class="article-title">Welcome to Hawaii!</h2>
       <p class="article-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quaerat nemo veritatis quasi eius eum aliquid, nobis dolore nisi, magnam eaque iusto, necessitatibus atque laborum quam tempora ducimus dicta ipsam.</p>
     </article>
@@ -65,12 +71,13 @@
       <li class="item">1</li>
     </ul>
     <img class="image" src="https://i.gifer.com/origin/5e/5e078a53db913f13fb65788d46fadb0b_w200.gif" alt="lake and clouds" width="500px">
-    
+     -->
     <!-- Thanks a lot to Willy Aguirre for his help with the code for this assessment -->
     <p class="story"></p>
     <script type="module"  src="./js/main.js"></script>
     <script type="module"  src="./js/modul6.js"></script>
     <script type="module"  src="./js/modul7.js"></script>
+    <script type="module"  src="./js/kata.js"></script>
 
   </body>
 </html>
