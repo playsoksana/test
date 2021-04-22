@@ -90,19 +90,19 @@ bodyEl.append(newList);
 // Задание 1
 // Напиши скрипт, который выполнит следующие операции.
 // Посчитает и выведет в консоль количество категорий в ul#categories, то есть элементов li.item. Получится 'В списке 3 категории.'.
-console.log('TASK1')
-const arrCategEl = document.querySelectorAll('.item');
-const sumcateg = arrCategEl.length;
-const titleCategorieEl = index => arrCategEl[index].firstElementChild.textContent; 
-const itemCategorieEl = index => console.log(arrCategEl[index].querySelectorAll('li').length); 
+// console.log('TASK1')
+// const arrCategEl = document.querySelectorAll('.item');
+// const sumcateg = arrCategEl.length;
+// const titleCategorieEl = index => arrCategEl[index].firstElementChild.textContent; 
+// const itemCategorieEl = index => console.log(arrCategEl[index].querySelectorAll('li').length); 
 
 
-const printoutSum = sumcat => console.log(`В списке ${sumcat} категории.`);
-printoutSum(sumcateg);
-arrCategEl.forEach(element => 
-     console.log(`Категория: ${element.firstElementChild.textContent}`+ `\n` +
-     `Количество элементов: ${element.querySelectorAll('li').length}` )
-);
+// const printoutSum = sumcat => console.log(`В списке ${sumcat} категории.`);
+// printoutSum(sumcateg);
+// arrCategEl.forEach(element => 
+//      console.log(`Категория: ${element.firstElementChild.textContent}`+ `\n` +
+//      `Количество элементов: ${element.querySelectorAll('li').length}` )
+// );
 
 
 
@@ -228,4 +228,28 @@ arrCategEl.forEach(element =>
 
 // <div id="boxes"></div>
 
-
+const x = document.querySelector('.ggg');
+const body = document.querySelector('body');
+body.style.backgroundColor = 'green';
+console.log(x);
+x.style.fontSize = 50 + 'px';
+x.style.width = 400 + 'px';
+//x.style.marginTop = 400 + 'px';
+x.style.backgroundColor = 'tomato';
+const fun = (event) => {
+    console.log(event);
+    x.textContent = `
+clientX: ${event.clientX}/   
+clientY: ${event.clientY}/   
+layerX: ${event.layerX}/          
+layerY: ${event.layerY}/         
+movementX: ${event.movementX} 
+movementY: ${event.movementY}/
+offsetX: ${event.offsetX}/     
+offsetY: ${event.offsetY}/     
+pageX: ${event.pageX}/                     
+pageY: ${event.pageY}/                            
+screenX: ${event.screenX}/     
+screenY: ${event.screenY}`;
+};
+document.body.addEventListener('mousemove', fun);

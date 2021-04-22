@@ -78,7 +78,7 @@
 // const callback = par => par > 55;
 
 // const arr1 = [1, 5, 7];
- 
+
 // console.log(arr1.some(callback));
 
 
@@ -100,7 +100,7 @@
 //   ];
 
 // const allTags = tweets.reduce((acc, obj) => {
-  
+
 // return [...acc, ...obj.tags];
 // }, []);
 // console.log(allTags)
@@ -152,12 +152,12 @@
 // function filterArray(numbers, value) {
 //     const filteredNumbers = [];
 //     // Пиши код ниже этой строки
-  
+
 //   numbers.forEach(item => { 
 //   if (item > value) {
 //     filteredNumbers.push(item);
 //   }
-  
+
 //   });
 //     // Пиши код выше этой строки
 //     return filteredNumbers;
@@ -187,13 +187,13 @@
 // Пиши код ниже этой строки
 // const filterArray = (numbers, value) => {
 //     const filteredNumbers = [];
-  
+
 //     numbers.forEach((number) => {
 //       if (number > value) {
 //         filteredNumbers.push(number);
 //       }
 //     });
-  
+
 //     // Пиши код выше этой строки
 //     return filteredNumbers;
 //   }
@@ -207,7 +207,7 @@
 //     element % 2 === 0 ? copy.push(element + value) : copy.push(element)
 //    });
 //    return copy;
-    
+
 //     // Пиши код выше этой строки
 //   }
 //   console.log(changeEven([2, 8, 3, 7, 4, 6], 10))
@@ -227,7 +227,7 @@
 //     { title: 'Враг Божий', author: 'Бернард Корнуэлл', rating: 8.67 }
 //   ];
 //   // Пиши код ниже этой строки
-  
+
 //   const titles = books.map(item => item.title);
 
 //TASK12
@@ -249,7 +249,7 @@
 //     }
 //   ];
 //   // Пиши код ниже этой строки
-  
+
 //   const genres = books.flatMap(el => el.genres);
 
 //TASK13
@@ -307,11 +307,11 @@
 //     { title: 'Красна как кровь', author: 'Ли Танит', rating: 7.94 },
 //     { title: 'Враг Божий', author: 'Бернард Корнуэлл', rating: 8.67 }
 //   ];
-  
+
 //   const MIN_RATING = 8;
 //   const AUTHOR = 'Бернард Корнуэлл';
 //   // Пиши код ниже этой строки
-  
+
 //   const topRatedBooks = books.filter(el=> el.rating >= MIN_RATING);
 //   const booksByAuthor = books.filter(el => el.author === AUTHOR);
 
@@ -387,7 +387,7 @@
 // const getUsersWithEyeColor = (users, color) => {
 //     const usersColor = users.filter(user=>user.eyeColor===color);
 //     return usersColor
-   
+
 //    };
 //    // Пиши код выше этой строки
 
@@ -608,7 +608,7 @@
 //   const BOOK_TITLE = 'Сон смешного человека';
 //   const AUTHOR = 'Роберт Шекли';
 //   // Пиши код ниже этой строки
-  
+
 //   const bookWithTitle = books.find(el => el.title === BOOK_TITLE);
 //   const bookByAuthor = books.find(el => el.author === AUTHOR);
 
@@ -620,7 +620,7 @@
 //    return user;
 //  };
 //  // Пиши код выше этой строки
- 
+
 
 //TASK26
 // const firstArray = [26, 94, 36, 18];
@@ -680,11 +680,11 @@
 //   };
 //   const playtimes = Object.values(players); // [1270, 468, 710, 244]
 //   // Пиши код ниже этой строки
-  
+
 //   const totalPlayTime = playtimes.reduce((acc, item) => {
 //   return acc = acc + item}, 0);
-  
-  
+
+
 //   // Пиши код выше этой строки
 //   const averagePlayTime = totalPlayTime / playtimes.length;
 
@@ -701,7 +701,7 @@
 //     { name: 'Киви', playtime: 241, gamesPlayed: 1 },
 //   ];
 //   // Пиши код ниже этой строки
-  
+
 //   const totalAveragePlaytimePerGame = players.reduce((acc, item) => {
 //   return acc += item.playtime / item.gamesPlayed
 //   }, 0);
@@ -756,11 +756,11 @@
 //     'Говард Лавкрафт'
 //   ];
 //   // Пиши код ниже этой строки
-  
+
 //   const authorsInAlphabetOrder = [...authors]
 //   .sort((item, nextItem) => item
 //   .localeCompare(nextItem));
-  
+
 //   const authorsInReversedOrder = [...authors]
 //   .sort((item, nextItem) => nextItem
 //   .localeCompare(item));
@@ -775,18 +775,18 @@
 //     { title: 'Враг Божий', author: 'Бернард Корнуэлл', rating: 8.67 }
 //   ];
   // Пиши код ниже этой строки
-  
+
 //   const sortedByAuthorName = [...books].
 //   sort((item, nextItem) => item.author.
 //   localeCompare(nextItem.author));
-  
+
 //   const sortedByReversedAuthorName = [...books]
 //   .sort((item, nextItem) => nextItem.author
 //   .localeCompare(item.author));
-  
+
 //   const sortedByAscendingRating = [...books]
 //   .sort((item, nextItem) => item.rating - nextItem.rating);
-  
+
 //   const sortedByDescentingRating = [...books]
 //   .sort((item, nextItem) => nextItem.rating - item.rating);
 
@@ -903,12 +903,12 @@
 //   ];
 //   const MIN_BOOK_RATING = 8;
 //   // Пиши код ниже этой строки
-  
+
 //   const names = books.
 //   filter(item => item.rating > MIN_BOOK_RATING)
 //   .map(item => item.author)
 //   .sort((item, nextItem) => item.localeCompare(nextItem))
-   
+
 //TASK42
 
 //   // Пиши код ниже этой строки
@@ -919,7 +919,7 @@
 //    return arrFriends
 // };
 // // Пиши код выше этой строки
-  
+
 // console.log(getNamesSortedByFriendCount(arr));
 
 //TASK43
@@ -941,5 +941,28 @@
 // // Пиши код выше этой строки
 
 
+// const result = array.method(callback)
 
+// if (result_type === "Ничего - нам нужно только какое-то действие (напр. вывести элемент массива в консоль, повесить коллбэк на элемент)") {
+//   return 'forEach'
+// } else if (result_type === 'Массив такой же длины, но с измененными элементами (не обязательно всеми)') {
+//   return 'map' || 'flatMap'
+// } else if (result_type === 'Массив меньшей длины, в каком отфильтрованы определенные элементы') {
+//   return 'filter'
+// } else if (result_type === 'Один элемент массива, какой соответствует определенному условию') {
+//   return 'find'
+// } else if (result_type === 'true или false в зависимости от условия, которое валидно для одного элемента массива') {
+//   return 'some'
+// } else if (result_type === 'true или false в зависимости от условия, которое валидно для каждого элемента массива') {
+//   return 'every'
+
+// } else if (result_type === 'Индекс элемента массива, какой соответствует определенному условию') {
+//   return 'findIndex'
+// } else {
+//   /*
+//     Examples:
+//       - Получить одно значение, основанное на элементах массива (например, сумма элементов)
+//       - Получить обьект или какую либо другую структуру данных, основанную на данном массива
+//   */
+//   return 'reduce' || 'reduceRight'
 
