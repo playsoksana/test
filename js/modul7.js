@@ -228,28 +228,30 @@ bodyEl.append(newList);
 
 // <div id="boxes"></div>
 
-const x = document.querySelector('.ggg');
-const body = document.querySelector('body');
-body.style.backgroundColor = 'green';
-console.log(x);
-x.style.fontSize = 50 + 'px';
-x.style.width = 400 + 'px';
-//x.style.marginTop = 400 + 'px';
-x.style.backgroundColor = 'tomato';
-const fun = (event) => {
-    console.log(event);
-    x.textContent = `
-clientX: ${event.clientX}/   
-clientY: ${event.clientY}/   
-layerX: ${event.layerX}/          
-layerY: ${event.layerY}/         
-movementX: ${event.movementX} 
-movementY: ${event.movementY}/
-offsetX: ${event.offsetX}/     
-offsetY: ${event.offsetY}/     
-pageX: ${event.pageX}/                     
-pageY: ${event.pageY}/                            
-screenX: ${event.screenX}/     
-screenY: ${event.screenY}`;
-};
-document.body.addEventListener('mousemove', fun);
+// const x = document.querySelector('.ggg');
+// const body = document.querySelector('body');
+// body.style.backgroundColor = 'green';
+// body.style.paddingLeft = 50 + 'px';
+// console.log(x);
+// x.style.fontSize = 50 + 'px';
+// x.style.width = 400 + 'px';
+// x.style.marginTop = 400 + 'px';
+// x.style.backgroundColor = 'tomato';
+// const fun = (event) => {
+//     console.log(event);
+//     x.textContent = `
+// clientX: ${event.clientX}/   
+// clientY: ${event.clientY}/   
+// layerX: ${event.layerX}/          
+// layerY: ${event.layerY}/         
+// movementX: ${event.movementX} 
+// movementY: ${event.movementY}/
+// offsetX: ${event.offsetX}/     
+// offsetY: ${event.offsetY}/     
+// pageX: ${event.pageX}/                     
+// pageY: ${event.pageY}/                            
+// screenX: ${event.screenX}/     
+// screenY: ${event.screenY}`;
+// };
+// x.addEventListener('mousemove', fun);
+// window.addEventListener('mousemove', fun);
