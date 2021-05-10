@@ -257,17 +257,22 @@
 
 // };
 // console.log(solution(4.2));
-function twoSum(numbers, target) {
 
-    numbers.forEach(el => {
-        const result = [];
-        if (numbers.indexOf(target - el)) {
-            let index = numbers.indexOf(target - el);
-            result.push(el, numbers[index])
-            return index;
-        }
+//KATA
 
+// var uniqueInOrder = function (iterable) {
+//     const result = iterable.replace(/(.)\1+/g, '$1')
+//     return result;
+// }
 
-    });
+// console.log(uniqueInOrder('AAAABBBCCDAABBB'))
+
+function upArray(arr) {
+    // console.log(String(Number(arr.join('')) + 1));
+
+    return arr.join('').length > arr.length ? null
+        : arr.length === 0 ? null
+            : String(Number(arr.join('') + 1) + 1).split('').map(Number)
+
 };
-console.log(twoSum([1, 2, 3], 4));
+console.log(upArray([9, 2, 2, 3, 3, 7, 2, 0, 3, 6, 8, 5, 4, 7, 7, 5, 8, 0, 7, 5, 3, 2, 6, 7, 8, 4, 2, 4, 2, 6, 7, 8, 7, 4, 5, 2, 2]));
